@@ -1,0 +1,109 @@
+@font-face {
+  font-weight: 400;
+  font-family: "Manrope";
+  font-style: normal;
+  src: url("../fonts/Manroperegular.woff2") format("woff2"), url("../fonts/Manroperegular.woff") format("woff");
+}
+@font-face {
+  font-weight: 600;
+  font-family: "Manrope";
+  font-style: normal;
+  src: url("../fonts/Manropesemibold.woff2") format("woff2"), url("../fonts/Manropesemibold.woff") format("woff");
+}
+@font-face {
+  font-weight: 700;
+  font-family: "Manrope";
+  font-style: normal;
+  src: url("../fonts/Manropebold.woff2") format("woff2"), url("../fonts/Manropebold.woff") format("woff");
+}
+body {
+  font-family: "Manrope", "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background-color: #282828;
+  margin: 0;
+  padding: 0;
+  height: 100px;
+}
+.header__wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+.header__logo {
+  margin-right: 30px;
+}
+.header__menu-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+}
+.header__menu-item {
+  margin-right: 25px;
+}
+.header__menu-item:last-child {
+  margin-right: 0;
+}
+.header__menu-item a {
+  color: #fff;
+  font-size: 25px;
+  line-height: 30px;
+  text-decoration: none;
+}
+.header__login-nav {
+  margin-left: auto;
+}
+.header__login-link {
+  color: #fff;
+  text-decoration: none;
+  background-color: #187dc0;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-size: 25px;
+}
+.main-page {
+  height: calc(100vh - 100px);
+  width: 100%;
+  background-image: url(../img/main-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.main-page__wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  height: calc(0vh);
+}
+.main-page__link {
+  background-color: #3f163d;
+  display: block;
+  margin: 0 auto;
+  width: 320px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  margin-left: -160px;
+  top: 80%;
+  margin-top: -23px;
+}
+.main-page__logo-img {
+  margin: 0 auto;
+  display: block;
+  width: 275;
+  height: 268;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -134px;
+  margin-left: -137px;
+}
