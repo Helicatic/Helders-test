@@ -33,7 +33,7 @@
         </ul>
       </nav>
       <nav class="header__login-nav">
-        <a href="#" class="header__login-link">Войти</a>
+        <button href="#" class="header__login-link">Войти</button>
       </nav>
     </div>
   </header>
@@ -42,9 +42,71 @@
     <div class="main-page__wrapper">
       <img src="img/logo-block.png" alt="" width="275" height="268" class="main-page__logo-img">
       <a href="#" class="main-page__link">
-        <img src="img/roadmap.svg" alt="" width="171" height="28">
+        <img src="img/roadmap.png" alt="" width="171" height="28">
       </a>
     </div>
   </div>
+
+  <div class="login-popup">
+    <div class="login-popup__wrapper">
+      <form class="login-popup__form" action="https://echo.htmlacademy.ru" method="post">
+  				<div class="login-popup__field-group">
+            <label for="login-field" class="login-popup__field-label" pattern="A-Za-z">Логин</label>
+  					<input id="login-field" class="login-popup__field-input" type="text" name="login" placeholder="Логин">
+  				</div>
+
+  				<div class="login-popup__field-group">
+            <label for="password-field" class="login-popup__field-label">Пароль</label>
+  					<input id="password-field" class="login-popup__field-input" type="password" name="password" placeholder="Пароль">
+  				</div>
+
+  				<label class="login-popup__remember">
+  					<input class="login-popup__checkbox" type="checkbox" name="remember" checked>
+  					Запомнить меня!
+  				</label>
+  				<a class="login-popup__restore" href="#">Забыли пароль?</a>
+
+          <div class="login-popup__btn-group">
+  				  <button class="login-popup__btn" type="submit">Войти</button>
+            <button class="login-popup__btn login-popup__btn--reg" type="button">Регистрация</button>
+          </div>
+  			</form>
+      </div>
+
+      <button type="button" class="login-popup__close"></button>
+  </div>
+
+  <div class="reg-popup">
+    <div class="reg-popup__wrapper">
+      <form class="reg-popup__form" action="https://echo.htmlacademy.ru" method="post">
+  				<div class="reg-popup__field-group">
+            <label for="reg-login-field" class="reg-popup__field-label">Логин</label>
+  					<input id="reg-login-field" class="reg-popup__field-input" type="text" name="reg-login" placeholder="Логин">
+  				</div>
+
+  				<div class="reg-popup__field-group">
+            <label for="reg-password-field" class="reg-popup__field-label">Пароль</label>
+  					<input id="reg-password-field" class="reg-popup__field-input" type="password" name="reg-password" placeholder="Пароль">
+  				</div>
+          <div class="reg-popup__field-group reg-popup__field-group--last">
+            <label for="reg-password-repeat-field" class="reg-popup__field-label">Повторите пароль</label>
+  					<input id="reg-password-repeat-field" class="reg-popup__field-input" type="password" name="reg-repeat-password" placeholder="Повторите пароль">
+  				</div>
+
+          <div class="reg-popup__btn-group">
+            <button class="reg-popup__btn" type="submit">Зарегестрироваться</button>
+          </div>
+  			</form>
+      </div>
+
+      <button type="button" class="reg-popup__close"></button>
+  </div>
+
+  <div class="modal-overlay">
+
+  </div>
+
+  <script src="js/popup.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 </html>
