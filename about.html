@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=`device-width`, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>О нас - Hellder</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="about-page">
+
+  <header class="header">
+    <div class="header__wrapper">
+      <div class="header__mobile">
+        <a class="header__logo" href="index.html">
+          <img src="img/logo-beta.png" alt="" class="header__logo-img">
+        </a>
+        <button type="button" class="header__toggle header__toggle--open header__toggle--show">
+          <img src="img/toggle.svg" width="25" height="25">
+        </button>
+        <button type="button" class="header__toggle header__toggle--close ">
+
+        </button>
+      </div>
+      <nav class="header__menu">
+        <ul class="header__menu-list">
+          <li class="header__menu-item">
+            <a href="news.html">Новости</a>
+          </li>
+          <li class="header__menu-item header__menu-item--active">
+            <a>О нас</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="investors.html">Инвесторам</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="reviews.html">Отзывы</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="faq.html">FAQ</a>
+          </li>
+        </ul>
+        <ul class="header__login-nav">
+          <li>
+            <button class="header__login-link">Войти</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="about-main">
+    <div class="about__wrapper">
+      <img src="img/logo-block.png" alt="" class="about__img" width="275" height="268">
+      <h3 class="about__title">О нас</h3>
+      <p class="about__text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <ul class="footer__social-list">
+        <li class="footer__social-item">
+          <a href="https://www.instagram.com/p/B_OAAz4HJ-P/?igshid=1gq57k2b7vk29" >
+            <img src="img/instagram.svg" width="18" height="23">
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a href="https://www.facebook.com/groups/HDR.Official" >
+            <img src="img/facebook.svg" width="18" height="24">
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a href="https://t.me/hdr_officialgroup" >
+            <img src="img/telegram-cut.svg" width="17" height="18">
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a href="https://vk.com/hellder_official" >
+            <img src="img/vk.svg" width="17" height="18">
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a href="https://twitter.com/HDROfficial1?s=09" >
+            <img src="img/twitter.svg" width="17" height="18">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+
+
+  <div class="login-popup">
+    <div class="login-popup__wrapper">
+      <form class="login-popup__form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="login-popup__field-group">
+            <label for="login-field" class="login-popup__field-label" pattern="A-Za-z">Логин</label>
+            <input id="login-field" class="login-popup__field-input" type="text" name="login" placeholder="Логин" required>
+          </div>
+
+          <div class="login-popup__field-group">
+            <label for="password-field" class="login-popup__field-label">Пароль</label>
+            <input id="password-field" class="login-popup__field-input" type="password" name="password" placeholder="Пароль" required>
+          </div>
+
+          <label class="login-popup__remember">
+            <input class="login-popup__checkbox" type="checkbox" name="remember" checked>
+            Запомнить меня!
+          </label>
+          <a class="login-popup__restore" href="#">Забыли пароль?</a>
+
+          <div class="login-popup__btn-group">
+            <button class="login-popup__btn" type="submit">Войти</button>
+            <button class="login-popup__btn login-popup__btn--reg" type="button">Регистрация</button>
+          </div>
+        </form>
+      </div>
+
+      <button type="button" class="login-popup__close"></button>
+  </div>
+
+  <div class="reg-popup">
+    <div class="reg-popup__wrapper">
+      <form class="reg-popup__form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="reg-popup__field-group">
+            <label for="reg-login-field" class="reg-popup__field-label">Логин</label>
+            <input id="reg-login-field" class="reg-popup__field-input" type="text" name="reg-login" placeholder="Логин" required>
+          </div>
+
+          <div class="reg-popup__field-group">
+            <label for="reg-password-field" class="reg-popup__field-label">Пароль</label>
+            <input id="reg-password-field" class="reg-popup__field-input" type="password" name="reg-password" placeholder="Пароль" required>
+          </div>
+          <div class="reg-popup__field-group reg-popup__field-group--last">
+            <label for="reg-password-repeat-field" class="reg-popup__field-label">Повторите пароль</label>
+            <input id="reg-password-repeat-field" class="reg-popup__field-input" type="password" name="reg-repeat-password" placeholder="Повторите пароль" required>
+          </div>
+
+          <div class="reg-popup__btn-group">
+            <button class="reg-popup__btn" type="submit">Зарегестрироваться</button>
+          </div>
+        </form>
+      </div>
+
+      <button type="button" class="reg-popup__close"></button>
+  </div>
+
+  <div class="modal-overlay">
+
+  </div>
+
+  <script src="js/popup.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
